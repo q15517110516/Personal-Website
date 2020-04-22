@@ -29,7 +29,7 @@ export class App extends Component {
             </Menu.Item>
           </Menu>
         </Header>
-        <Content style={{marginTop: 64, padding: "0 50px", backgroundColor: "white"}}>
+        <Content className="content" style={{marginTop: 64, padding: "0 50px", backgroundColor: "white"}}>
           <Switch>
             <Route exact path = "/" component={Home}/>
             <Route path = "/About"component={About}/>
