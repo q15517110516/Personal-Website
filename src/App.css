@@ -1,5 +1,14 @@
 .my-name {
     color: white;
-    font: 20px Arial;
+    font: 25px Times, serif;
     margin-top: 20px;
+}
+
+.navbar {
+    font-family: Times, serif;
+}
+
+.ant-divider,
+.ant-divider-horizontal {
+    margin: 0;
 }

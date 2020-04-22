@@ -17,7 +17,7 @@ export class App extends Component {
       <Layout>
         <Header style={{ position: 'fixed', width: '100%' }}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
-          <Menu theme="dark" mode="horizontal" style={{float: "right"}}>
+          <Menu className="navbar" theme="dark" mode="horizontal" style={{float: "right"}}>
             <Menu.Item key="1">
               <NavLink to="/">Home</NavLink>
             </Menu.Item>
@@ -36,7 +36,7 @@ export class App extends Component {
             <Route path = "/Contact" component={Contact}/>
           </Switch>
         </Content>
-        <Footer style={{}}>
+        <Footer style={{fontFamily: "Times, serif"}}>
           <div style={{float: "left"}}>Mingrui Liu</div>
           <div style={{float: "right"}}>Copyright © 2020 - Mingrui Liu. All Rights Reserved</div>
         </Footer>
