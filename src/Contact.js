@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import 'antd/dist/antd.css';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button } from 'antd';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -17,58 +19,97 @@ export class Contact extends Component {
         }
         
     }
+
+    handleChange = (event) => {
+        // console.log(event);
+
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value
+        })
+    }
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+
+        // console.log(event.target);
+        
+        this.setState({
+            emailSent: true,
+            disabled: true,
+            
+        })
+
+    }
+
+    // onFinish = values => {
+    //     this.setState({
+    //         disabled: true,
+            
+    //     })
+    // }
     
     render() {
         return (
             <div className="contact-main">
                 <h1 className="contact-title">Let's Talk</h1>
                 <div>
-                    <Form layout="vertical">
-                        <Form.Item
-                            label="Full Name"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: 'Please insert your full name!',
-                                }
-                            ]}
-                        >
-                            <Input name="name" type="text" value={this.state.name} placeholder="Full Name"/>
-                        </Form.Item>
+                    <form onSubmit={this.handleSubmit}>
+                        <div className="form-group">
+                            <label className="label">Full Name</label>
+                            <input 
+                                name="name"
+                                type="text" 
+                                className="form-control" 
+                                placeholder="Full Name" 
+                                value={this.state.name}
+                                onChange={this.handleChange}
+                                required
+                            />
+                            
+                        </div>
 
-                        <Form.Item
-                            label="Email"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: 'Please insert your Email!',
-                                }
-                            ]}
-                        >
-                            <Input name="email" type="text" value={this.state.email} placeholder="Email"/>
-                        </Form.Item>
-
-                        <Form.Item
-                            label="Message"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: 'Please insert Messages!',
-                                }
-                            ]}
-                        >
-                            <Input.TextArea 
-                                name="message" 
+                        <div className="form-group">
+                            <label className="label">Email</label>
+                            <input 
+                                name="email"
+                                type="email" 
+                                className="form-control" 
+                                placeholder="Email" 
+                                value={this.state.email}
+                                onChange={this.handleChange}
+                                required
+                            />
+                            <div className="invalid-feedback">
+                                Please insert your Full Name!
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label className="label">Message</label>
+                            <textarea 
+                                className="form-control"
+                                name="message"
+                                placeholder="Messages"
                                 value={this.state.message}
-                                autoSize={{minRows: 4}}
+                                onChange={this.handleChange}
+                                rows="5"
+                                required
                             />
                         
-                        </Form.Item>
-
-                        <Form.Item>
-                            <Button type="primary">Send</Button>
-                        </Form.Item>
-                    </Form>
+                        </div>
+                        <button 
+                            type="submit" 
+                            className="btn btn-primary"
+                            disabled={this.state.disabled}
+                        >
+                        Submit
+                        </button>
+                        {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
+                        {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
+                    </form>
                 </div>
             </div>
         )
