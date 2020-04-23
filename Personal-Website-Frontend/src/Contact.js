@@ -3,7 +3,7 @@ import './Contact.css';
 import 'antd/dist/antd.css';
 import { Form, Input, Button } from 'antd';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import axios from 'axios';
 
 
 
@@ -38,19 +38,32 @@ export class Contact extends Component {
         // console.log(event.target);
         
         this.setState({
-            emailSent: true,
             disabled: true,
             
-        })
+        });
+
+        axios.post('http://localhost:8080/api/email', this.state)
+            .then(res => {
+                if(res.data.success){
+                    this.setState({
+                        disabled: false,
+                        emailSent: true,
+                    });
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false,
+                    });
+                }
+            })
+            .catch(err => {
+                this.setState({
+                    disabled: false,
+                    emailSent: false,
+                });
+            })
 
     }
-
-    // onFinish = values => {
-    //     this.setState({
-    //         disabled: true,
-            
-    //     })
-    // }
     
     render() {
         return (
