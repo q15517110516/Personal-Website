@@ -42,7 +42,7 @@ export class Contact extends Component {
             
         });
 
-        axios.post('http://localhost:8080/api/email', this.state)
+        axios.post('http://localhost:8080/send', this.state)
             .then(res => {
                 if(res.data.success){
                     this.setState({

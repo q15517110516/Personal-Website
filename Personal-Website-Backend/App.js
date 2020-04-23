@@ -20,11 +20,11 @@ app.get('/api', (req, res, next) => {
     res.send('API Status: Running')
 });
 
-app.post('/api/email', (req, res, next) => {
+app.post('/send', (req, res, next) => {
 
     console.log(req.body);
 
-    sendGrid.setApiKey('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');
+    sendGrid.setApiKey('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');
     
     const msg = {
         to: 'lmrzds@gmail.com',
