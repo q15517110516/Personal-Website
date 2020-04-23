@@ -17,7 +17,7 @@ export class App extends Component {
       <Layout>
         <Header style={{ position: 'fixed', width: '100%' }}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
-          <Menu className="navbar" theme="dark" mode="horizontal" style={{float: "right"}}>
+          <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right"}}>
             <Menu.Item key="1">
               <NavLink to="/">Home</NavLink>
             </Menu.Item>

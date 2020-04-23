@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './About.css';
-import { Divider } from 'antd';
 import 'antd/dist/antd.css';
 
 
