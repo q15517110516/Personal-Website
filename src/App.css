@@ -8,13 +8,10 @@
     font-family: Times, serif;
 }
 
-.ant-divider,
-.ant-divider-horizontal {
-    margin: 0;
-}
-
 .content {
-    /* width: 80%; */
-    /* margin: auto; */
-    /* height: 100vh; */
+    margin-top: 64px;
+    padding: 0 50px;
+    background-color: white;
+    overflow: auto;
+    /* margin-bottom: 50px; */
 }

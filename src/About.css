@@ -11,6 +11,11 @@
     color: black;
     font-weight: bolder;
     text-align: center;
+    margin: 50px;
+}
+
+.about-content {
+    margin-bottom: 70px;
 }
 
 h1 {

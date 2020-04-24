@@ -14,7 +14,7 @@ const { Header, Content, Footer } = Layout;
 export class App extends Component {
   render() {
     return (
-      <Layout>
+      <Layout style={{height: "100vh"}}>
         <Header style={{ position: 'fixed', width: '100%' }}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right"}}>
@@ -29,7 +29,7 @@ export class App extends Component {
             </Menu.Item>
           </Menu>
         </Header>
-        <Content className="content" style={{marginTop: 64, padding: "0 50px", backgroundColor: "white"}}>
+        <Content className="content">
           <Switch>
             <Route exact path = "/" component={Home}/>
             <Route path = "/About"component={About}/>
