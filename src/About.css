@@ -6,16 +6,22 @@
     margin: auto;
 }
 
-.about-title {
+
+/* .about-title {
     font-size: 100px;
     color: black;
     font-weight: bolder;
     text-align: center;
     margin: 50px;
+} */
+
+.about-img {
+    margin: auto;
+    margin-bottom: 60px;
 }
 
 .about-content {
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
 h1 {

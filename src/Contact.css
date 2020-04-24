@@ -6,17 +6,24 @@
     margin: auto;
 }
 
-.contact-title {
+
+/* .contact-title {
     font-size: 100px;
     color: black;
     font-weight: bolder;
     text-align: center;
     margin: 50px;
+} */
+
+.contact-img {
+    margin: auto;
+    margin-bottom: 60px;
 }
 
 .contact-forms {
     width: 60%;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 .label {

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as emailjs from 'emailjs-com';
+import contact from './Images/Contact.png';
 
 
 
@@ -71,7 +72,8 @@ export class Contact extends Component {
     render() {
         return (
             <div className="contact-main">
-                <h1 className="contact-title">Let's Talk</h1>
+                {/*<h1 className="contact-title">Let's Talk</h1>*/}
+                <img className="contact-img" src={contact} style={{width: 864, height: 356}} />
                 
                 <div className="contact-forms">
                     <form onSubmit={this.handleSubmit}>
