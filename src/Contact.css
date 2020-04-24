@@ -1,16 +1,21 @@
 .contact-main {
     display: flex;
     flex-direction: column;
-    /* font-family: Times, serif; */
+    font-family: Times, serif;
     width: 80%;
-    margin-left: 10%;
+    margin: auto;
 }
 
 .contact-title {
-    font-size: 70px;
+    font-size: 100px;
     color: black;
     font-weight: bolder;
     text-align: center;
+}
+
+.contact-forms {
+    width: 60%;
+    margin: auto;
 }
 
 .label {

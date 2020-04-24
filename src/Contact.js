@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
 import * as emailjs from 'emailjs-com';
 
 
@@ -73,7 +72,8 @@ export class Contact extends Component {
         return (
             <div className="contact-main">
                 <h1 className="contact-title">Let's Talk</h1>
-                <div>
+                
+                <div className="contact-forms">
                     <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
                             <label className="label">Full Name</label>
