@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './Contact.css';
-import 'antd/dist/antd.css';
-import { Form, Input, Button } from 'antd';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import * as emailjs from 'emailjs-com';
 
 
 
@@ -35,33 +34,38 @@ export class Contact extends Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-        // console.log(event.target);
         
         this.setState({
             disabled: true,
             
         });
 
-        axios.post('http://localhost:8080/send', this.state)
-            .then(res => {
-                if(res.data.success){
-                    this.setState({
-                        disabled: false,
-                        emailSent: true,
-                    });
-                } else {
-                    this.setState({
-                        disabled: false,
-                        emailSent: false,
-                    });
-                }
+        let templateParams = {
+            from_name: this.state.name,
+            to_name: 'lmrzds@gmail.com',
+            message_html: this.state.message,
+            reply_to: this.state.email,
+            subject: 'Website Contact',
+        }
+
+        emailjs.send(
+            'gmail',
+            'template_rhW2lT4U',
+            templateParams,
+            'user_tL2tIvHvl8OlaMvpj5O0o',
+        )
+        .then(res => {
+            this.setState({
+                emailSent: true,
             })
-            .catch(err => {
-                this.setState({
-                    disabled: false,
-                    emailSent: false,
-                });
+            console.log(res.text);
+        })
+        .catch(err => {
+            this.setState({
+                emailSent: false,
             })
+            console.log('error: ', err);
+        })
 
     }
     
