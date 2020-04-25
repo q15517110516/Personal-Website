@@ -20,13 +20,13 @@ export class App extends Component {
 
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
             <Menu.Item key="1">
-              <NavLink to="/">Home</NavLink>
+              <NavLink className="navlink" to="/">Home</NavLink>
             </Menu.Item>
             <Menu.Item key="2">              
-              <NavLink to="/About">About</NavLink>
+              <NavLink className="navlink" to="/About">About</NavLink>
             </Menu.Item>
             <Menu.Item key="3">              
-              <NavLink to="/Contact">Contact</NavLink>
+              <NavLink className="navlink" to="/Contact">Contact</NavLink>
             </Menu.Item>
           </Menu>
         </Header>

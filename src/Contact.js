@@ -124,7 +124,7 @@ export class Contact extends Component {
                             className="btn btn-primary"
                             disabled={this.state.disabled}
                         >
-                        Submit
+                        Send
                         </button>
                         {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
                         {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
