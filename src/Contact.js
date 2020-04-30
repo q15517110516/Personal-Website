@@ -72,8 +72,7 @@ export class Contact extends Component {
     render() {
         return (
             <div className="contact-main">
-                {/*<h1 className="contact-title">Let's Talk</h1>*/}
-                <img className="contact-img" src={contact} style={{width: 864, height: 356}} />
+                <img className="contact-img" src={contact} alt="contactme" style={{width: 864, height: 356}} />
                 
                 <div className="contact-forms">
                     <form onSubmit={this.handleSubmit}>

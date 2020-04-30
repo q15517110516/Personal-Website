@@ -9,8 +9,7 @@ export class About extends Component {
     render() {
         return (
             <div className="about-main">
-                {/*<h1 className="about-title">About Me</h1>*/}
-                <img className="about-img" src={about} style={{width: 864, height: 356}} />
+                <img className="about-img" src={about} alt="aboutme" style={{width: 864, height: 356}} />
                 
                 <div className="about-content">
                     <h1>Introduction</h1>
