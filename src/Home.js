@@ -64,7 +64,7 @@ export class Home extends Component {
                                 <div className="skills-right">
                                     <div className="skills">
                                         <h4>RWD</h4>
-                                        <Progress percent={75} strokeColor="black"
+                                        <Progress percent={85} strokeColor="black"
                                         />
                                     </div>
                                     <div className="skills">
@@ -88,38 +88,48 @@ export class Home extends Component {
                 </div>
 
                 {/* Projects */}
-                <div className="home-project">
+                <div className="home-content-3">
+                    <img src={img3} alt="img3" width={100} height={100}/>
+                    <h1 className="home-project-title">
+                        What Have I Done?
+                    </h1>
+                    <div className="home-projects">
 
-                    {/* Carousel */}
-                    <div id="projects" className="carousel slide" data-ride="carousel">
-                        <ol className="carousel-indicators">
-                            <li data-target="#projects" data-slide-to="0"></li>
-                            <li data-target="#projects" data-slide-to="1"></li>
-                        </ol>
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img src={Dashboard} width={752} height={502} alt="dashboard" />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5 style={{color: "white"}}>Dashboard</h5>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum</p>
+                        {/* Carousel */}
+                        <div id="projects" className="carousel slides" data-ride="carousel">
+                            <ol className="carousel-indicators">
+                                <li data-target="#projects" data-slide-to="0"></li>
+                                <li data-target="#projects" data-slide-to="1"></li>
+                            </ol>
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img src={Dashboard} width={752} height={502} alt="dashboard" />
+                                    <div className="carousel-caption d-none d-md-block">
+                                        <h5 style={{color: "white"}}>Dashboard</h5>
+                                        <p>
+                                            Dashboard project contains Homepage, user lists, chatApp, and several charts.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Template} width={752} height={502} alt="template" />
+                                    <div className="carousel-caption d-none d-md-block">
+                                        <h5>Template Selector</h5>
+                                        <p style={{color: "black"}}>
+                                            Display charts with selected data and chart template.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="carousel-item">
-                                <img src={Template} width={752} height={502} alt="template" />
-                                <div className="carousel-caption d-none d-md-block">
-                                    <h5>Second Project</h5>
-                                    <p style={{color: "black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum</p>
-                                </div>
-                            </div>
+                            <a className="carousel-control-prev" href="#projects" role="button" data-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Previous</span>
+                            </a>
+                            <a className="carousel-control-next" href="#projects" role="button" data-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="sr-only">Next</span>
+                            </a>
                         </div>
-                        <a className="carousel-control-prev" href="#projects" role="button" data-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#projects" role="button" data-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
-                        </a>
                     </div>
                 </div>
                 <div className="home-footer"></div>
