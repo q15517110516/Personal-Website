@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './Home.css';
 import 'antd/dist/antd.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Progress } from 'antd';
 
 import img1 from './Images/01.png';
 import img2 from './Images/02.png';
 import img3 from './Images/03.png';
 import img4 from './Images/04.png';
+import Dashboard from './Images/Dashboard.jpg';
+import Template from './Images/Template.jpg';
+
 
 
 export class Home extends Component {
@@ -78,11 +82,40 @@ export class Home extends Component {
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                         <img className="img2" src={img2} width={100} height={100} alt="02"/>
                     </div>
+                </div>
+
+                {/* Projects */}
+                <div className="home-project">
+
+                    {/* Carousel */}
+                    <div id="projects" className="carousel slide" data-ride="carousel">
+                        <ol className="carousel-indicators">
+                            <li data-target="#projects" data-slide-to="0"></li>
+                            <li data-target="#projects" data-slide-to="1"></li>
+                            <li data-target="#projects" data-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                                <img src={Dashboard} width={752} height={502} alt="dashboard" />
+                                <div className="carousel-caption d-none d-md-block">
+                                    <h5 style={{color: "white"}}>Dashboard</h5>
+                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum</p>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                <img src={Template} width={752} height={502} alt="template" />
+                                <div className="carousel-caption d-none d-md-block">
+                                    <h5>Second Project</h5>
+                                    <p style={{color: "black"}}>Nulla vitae elit libero, a pharetra augue mollis interdum</p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    
                 </div>
                 <div className="home-footer"></div>
             </div>
