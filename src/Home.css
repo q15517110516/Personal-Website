@@ -52,11 +52,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 990px;
     align-items: center;
 }
 
 .home-projects {
     width: 100%;
+    min-width: 990px;
     background-color: #333333;
     height: 502px;
     margin-bottom: 100px;
