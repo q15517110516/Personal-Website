@@ -10,8 +10,7 @@ import img3 from './Images/03.png';
 import img4 from './Images/04.png';
 import Dashboard from './Images/Dashboard.jpg';
 import Template from './Images/Template.jpg';
-import Background from './Images//Background.mp4';
-import Background1 from './Images/Background1.ogg';
+import Background from './Images/Background.webm';
 
 
 
@@ -22,8 +21,6 @@ export class Home extends Component {
                 <div className="home-background">
                     <video autoPlay loop muted height={500} width={1000} poster={img1}>
                         <source src={Background} type="video/mp4"/>
-                        <source src={Background1} type="video/ogg"/>
-
                         Your browser does not support the video tag.
 
                     </video>
