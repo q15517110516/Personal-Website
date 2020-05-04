@@ -10,6 +10,7 @@ import img4 from './Images/04.png';
 import Dashboard from './Images/Dashboard.jpg';
 import Template from './Images/Template.jpg';
 import video from './Images/Background.webm';
+import Title from './Images/Title.png';
 
 
 
@@ -18,11 +19,12 @@ export class Home extends Component {
     render() {
         return (
             <div className="home">
-                <div className="home-background">
-                    <video autoPlay loop muted style={{width: "100%", height: 1070}} >
+                <div className="home-background" style={{position: "relative"}}>
+                    <img src={Title} alt="title" style={{zIndex: 2, position: "absolute", width: "100%", height: "100%"}}/>
+                    
+                    <video autoPlay loop muted style={{width: "100%", height: 1080, zIndex: 1}} >
                         <source src={video} type="video/mp4"/>
                         Your browser does not support the video tag.
-
                     </video>
                 </div>
                 <div className="home-content">

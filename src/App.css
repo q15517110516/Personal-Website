@@ -23,3 +23,9 @@ a.navlink {
 .navlink-active {
     background-color: black;
 }
+
+.ant-menu,
+.ant-menu-dark,
+.ant-menu-item-selected {
+    background-color: black !important;
+}
