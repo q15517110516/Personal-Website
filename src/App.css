@@ -4,10 +4,6 @@
     margin-top: 20px;
 }
 
-.navbar {
-    font-family: Times, serif;
-}
-
 .content {
     margin-top: 64px;
     padding: 0 50px;
@@ -20,6 +16,10 @@
     text-decoration: none;
 }
 
-.ant-menu-item-selected {
-    /* background-color: white; */
+a.navlink {
+    background-color: black;
+}
+
+.navlink-active {
+    background-color: black;
 }

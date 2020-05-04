@@ -17,16 +17,16 @@ export class App extends Component {
       <Layout style={{height: "100vh"}}>
         <Header style={{ position: 'fixed', width: '100%', backgroundColor: "black" }}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
-          
+
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
-            <Menu.Item key="1">
-              <NavLink className="navlink" to="/">Home</NavLink>
+            <Menu.Item className="nav-item" activeClassName="menuitem-active" key="1">
+              <NavLink className="navlink" activeClassName="navlink-active" to="/">Home</NavLink>
             </Menu.Item>
-            <Menu.Item key="2">              
-              <NavLink className="navlink" to="/About">About</NavLink>
+            <Menu.Item className="nav-item" key="2">              
+              <NavLink className="navlink" activeClassName="navlink-active" to="/About">About</NavLink>
             </Menu.Item>
-            <Menu.Item key="3">              
-              <NavLink className="navlink" to="/Contact">Contact</NavLink>
+            <Menu.Item className="nav-item" key="3">              
+              <NavLink className="navlink" activeClassName="navlink-active" to="/Contact">Contact</NavLink>
             </Menu.Item>
           </Menu>
         </Header>

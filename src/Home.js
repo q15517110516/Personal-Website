@@ -19,7 +19,7 @@ export class Home extends Component {
         return (
             <div className="home">
                 <div className="home-background">
-                    <video autoPlay loop muted style={{width: "100%"}} poster={img1}>
+                    <video autoPlay loop muted style={{width: "100%", height: 1070}} >
                         <source src={video} type="video/mp4"/>
                         Your browser does not support the video tag.
 
