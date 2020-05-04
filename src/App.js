@@ -14,10 +14,9 @@ const { Header, Content, Footer } = Layout;
 export class App extends Component {
   render() {
     return (
-      <Layout style={{height: "100vh", minWidth: 1675}}>
-        <Header style={{ position: 'fixed', width: '100%', backgroundColor: "black" }}>
+      <Layout style={{height: "100vh", minWidth: 990}}>
+        <Header style={{ position: 'fixed', width: '100%', backgroundColor: "black"}}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
-
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
             <Menu.Item className="nav-item" key="1">
               <NavLink className="navlink" activeClassName="navlink-active" to="/">Home</NavLink>

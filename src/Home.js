@@ -3,32 +3,41 @@ import './Home.css';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Progress } from 'antd';
-import img1 from './Images/01.png';
-import img2 from './Images/02.png';
-import img3 from './Images/03.png';
-import img4 from './Images/04.png';
-import Dashboard from './Images/Dashboard.jpg';
-import Template from './Images/Template.jpg';
+import {img1, 
+        img2, 
+        img3,
+        img4,
+        Dashboard,
+        Template,
+        Title    } from './Images';
 import video from './Images/Background.webm';
-import Title from './Images/Title.png';
 
 
 
 
 export class Home extends Component {
+
+    constructor(){
+        super();
+    }
+
+    showProject(){
+
+    }
+
+
     render() {
         return (
             <div className="home">
                 <div className="home-background" style={{position: "relative"}}>
-                    <img src={Title} alt="title" style={{zIndex: 2, position: "absolute", width: "100%", height: "100%"}}/>
-                    
-                    <video autoPlay loop muted style={{width: "100%", height: 1080, zIndex: 1}} >
+                    <img src={Title} alt="title" style={{zIndex: 2, position: "absolute", width: "100%"}}/>
+                    <video autoPlay loop muted style={{width: "100%", zIndex: 1}} >
                         <source src={video} type="video/mp4"/>
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div className="home-content">
-                                
+
                     {/* Information */}
                     <div className="home-content-1">
                         <img className="img1" src={img1} width={100} height={100} alt="01"/>
@@ -112,7 +121,7 @@ export class Home extends Component {
                             </ol>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={Dashboard} width={752} height={502} alt="dashboard" />
+                                    <img src={Dashboard} width={752} height={502} alt="dashboard" onClick={() => this.showProject()} />
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5 style={{color: "white"}}>Dashboard</h5>
                                         <p>
@@ -121,7 +130,7 @@ export class Home extends Component {
                                     </div>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={Template} width={752} height={502} alt="template" />
+                                    <img src={Template} width={752} height={502} alt="template" onClick={() => this.showProject()}/>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5>Template Selector</h5>
                                         <p style={{color: "black"}}>
