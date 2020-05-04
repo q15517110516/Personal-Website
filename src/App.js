@@ -17,7 +17,7 @@ export class App extends Component {
       <Layout style={{height: "100vh"}}>
         <Header style={{ position: 'fixed', width: '100%', backgroundColor: "black" }}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
-
+          
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
             <Menu.Item key="1">
               <NavLink className="navlink" to="/">Home</NavLink>
@@ -30,7 +30,7 @@ export class App extends Component {
             </Menu.Item>
           </Menu>
         </Header>
-        <Content className="content">
+        <Content className="content" style={{padding: 0}}>
           <Switch>
             <Route exact path = "/" component={Home}/>
             <Route path = "/About"component={About}/>

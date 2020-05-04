@@ -3,14 +3,14 @@ import './Home.css';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Progress } from 'antd';
-
 import img1 from './Images/01.png';
 import img2 from './Images/02.png';
 import img3 from './Images/03.png';
 import img4 from './Images/04.png';
 import Dashboard from './Images/Dashboard.jpg';
 import Template from './Images/Template.jpg';
-import Background from './Images/Background.webm';
+import video from './Images/Background.webm';
+
 
 
 
@@ -19,8 +19,8 @@ export class Home extends Component {
         return (
             <div className="home">
                 <div className="home-background">
-                    <video autoPlay loop muted height={500} width={1000} poster={img1}>
-                        <source src={Background} type="video/mp4"/>
+                    <video autoPlay loop muted style={{width: "100%"}} poster={img1}>
+                        <source src={video} type="video/mp4"/>
                         Your browser does not support the video tag.
 
                     </video>
