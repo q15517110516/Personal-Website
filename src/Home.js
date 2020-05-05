@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './Home.css';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Progress } from 'antd';
+import { Progress, Modal } from 'antd';
 import {img1, 
         img2, 
         img3,
@@ -11,6 +11,8 @@ import {img1,
         Template,
         Title    } from './Images';
 import video from './Images/Background.webm';
+import { C1, C2, C3, C4, C5, D1, D2, D3, D4, D5, D6, D7 } from './Projects-Images';
+import Project1 from './Project1';
 
 
 
@@ -19,10 +21,22 @@ export class Home extends Component {
 
     constructor(){
         super();
+        this.state={
+            project1Visible: false,
+            project2Visible: false,
+        }
     }
 
-    showProject(){
-
+    showProject1(project1Visible){
+        this.setState({
+            project1Visible
+        })
+    }
+    
+    showProject2(project2Visible){
+        this.setState({
+            project2Visible
+        })
     }
 
 
@@ -120,23 +134,43 @@ export class Home extends Component {
                                 <li data-target="#projects" data-slide-to="1"></li>
                             </ol>
                             <div className="carousel-inner">
+
+                                {/* Dashboard */}
                                 <div className="carousel-item active">
-                                    <img src={Dashboard} width={752} height={502} alt="dashboard" onClick={() => this.showProject()} />
+                                    <img src={Dashboard} width={752} height={502} alt="dashboard" onClick={() => this.showProject1(true)} />
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5 style={{color: "white"}}>Dashboard</h5>
                                         <p>
                                             Dashboard project contains Homepage, user lists, chatApp, and several charts.
                                         </p>
                                     </div>
+                                    <Modal centered 
+                                        width="100%"
+                                        visible={this.state.project1Visible} 
+                                        onOk={() => this.showProject1(false)}
+                                        onCancel={() => this.showProject1(false)}
+                                        >
+                                            <p>111</p>
+                                    </Modal>
                                 </div>
+
+                                {/* ChartApp */}
                                 <div className="carousel-item">
-                                    <img src={Template} width={752} height={502} alt="template" onClick={() => this.showProject()}/>
+                                    <img src={Template} width={752} height={502} alt="template" onClick={() => this.showProject2(true)}/>
                                     <div className="carousel-caption d-none d-md-block">
                                         <h5>Template Selector</h5>
                                         <p style={{color: "black"}}>
                                             Display charts with selected data and chart template.
                                         </p>
                                     </div>
+                                    <Modal centered 
+                                        width="100%"
+                                        visible={this.state.project2Visible} 
+                                        onOk={() => this.showProject2(false)}
+                                        onCancel={() => this.showProject2(false)}
+                                        >
+                                            <p>222</p>
+                                    </Modal>
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#projects" role="button" data-slide="prev">
