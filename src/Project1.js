@@ -6,7 +6,10 @@ import './Project.css';
 export class Project1 extends Component {
     render() {
         return (
-            <div>
+            <div className="project-dashboard">
+                <div className="project-title">
+                    <h1>Dashboard</h1>
+                </div>
                 <div id="Project1" className="carousel slide" data-ride="carousel">
                     <ol className="carousel-indicators">
                         <li data-target="#Project1" data-slide-to="0"></li>
@@ -19,25 +22,25 @@ export class Project1 extends Component {
                     </ol>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={D1} className="d-block w-100" height={316} width={640} alt="D1"/>
+                            <img src={D1} className="d-block w-100" height={317} width={640} alt="D1"/>
                         </div>
                         <div className="carousel-item">
-                            <img src={D2} className="d-block w-100" alt="D2"/>
+                            <img src={D2} className="d-block w-100" height={317} width={640} alt="D2"/>
                         </div>
                         <div className="carousel-item">
-                            <img src={D3} className="d-block w-100" alt="D3"/>
+                            <img src={D3} className="d-block w-100" height={317} width={640} alt="D3"/>
                         </div>
                         <div className="carousel-item">
-                            <img src={D4} className="d-block w-100" alt="D4"/>
+                            <img src={D4} className="d-block w-100" height={317} width={640} alt="D4"/>
                         </div>
                         <div className="carousel-item">
-                            <img src={D5} className="d-block w-100" alt="D5"/>
+                            <img src={D5} className="d-block w-100" height={317} width={640} alt="D5"/>
                         </div>
                         <div className="carousel-item">
-                            <img src={D6} className="d-block w-100" alt="D6"/>
+                            <img src={D6} className="d-block w-100" height={317} width={640} alt="D6"/>
                         </div>
                         <div className="carousel-item">
-                            <img src={D7} className="d-block w-100" alt="D7"/>
+                            <img src={D7} className="d-block w-100" height={317} width={640} alt="D7"/>
                         </div>
                     </div>
                     <a className="carousel-control-prev" href="#Project1" role="button" data-slide="prev">

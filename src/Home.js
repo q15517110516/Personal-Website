@@ -144,13 +144,15 @@ export class Home extends Component {
                                             Dashboard project contains Homepage, user lists, chatApp, and several charts.
                                         </p>
                                     </div>
-                                    <Modal centered 
-                                        width="100%"
+                                    <Modal  
+                                        footer={null}
+                                        style={{top: 0}}
+                                        
                                         visible={this.state.project1Visible} 
                                         onOk={() => this.showProject1(false)}
                                         onCancel={() => this.showProject1(false)}
                                         >
-                                            <p>111</p>
+                                            <Project1/>
                                     </Modal>
                                 </div>
 

@@ -1,4 +1,6 @@
-.project-images {
-    height: 316;
-    width: 640;
+.project-dashboard {
+    display: flex;
+    flex-direction: column;
+    /* height: 100%;
+    overflow: hidden; */
 }
