@@ -1,56 +1,49 @@
 import React, { Component } from 'react';
-import { D1, D2, D3, D4, D5, D6, D7 } from './Projects-Images';
+import { C1, C2, C3, C4, C5 } from './Projects-Images';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Project.css';
 
-export class Project1 extends Component {
+export class Project2 extends Component {
     render() {
         return (
             <div className="project">
-                <div className="project-dashboard">
+                <div className="project-ChartApp">
                     <div className="project-title">
-                        <h1><b>Dashboard</b></h1>
+                        <h1><b>ChartApp</b></h1>
                     </div>
 
                     <div className="project-content">
-                        <div id="Project1" className="carousel slide" data-ride="carousel" style={{width: 800}}>
+                        <div id="Project2" className="carousel slide" data-ride="carousel" style={{width: 800}}>
                             <ol className="carousel-indicators">
-                                <li data-target="#Project1" data-slide-to="0"></li>
-                                <li data-target="#Project1" data-slide-to="1"></li>
-                                <li data-target="#Project1" data-slide-to="2"></li>
-                                <li data-target="#Project1" data-slide-to="3"></li>
-                                <li data-target="#Project1" data-slide-to="4"></li>
-                                <li data-target="#Project1" data-slide-to="5"></li>
-                                <li data-target="#Project1" data-slide-to="6"></li>
+                                <li data-target="#Project2" data-slide-to="0"></li>
+                                <li data-target="#Project2" data-slide-to="1"></li>
+                                <li data-target="#Project2" data-slide-to="2"></li>
+                                <li data-target="#Project2" data-slide-to="3"></li>
+                                <li data-target="#Project2" data-slide-to="4"></li>
                             </ol>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                    <img src={D1} height={396} width={800} alt="D1"/>
+                                    <img src={C1} height={396} width={800} alt="C1"/>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={D2} height={396} width={800} alt="D2"/>
+                                    <img src={C2} height={396} width={800} alt="C2"/>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={D3} height={396} width={800} alt="D3"/>
+                                    <img src={C3} height={396} width={800} alt="C3"/>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={D4} height={396} width={800} alt="D4"/>
+                                    <img src={C4} height={396} width={800} alt="C4"/>
                                 </div>
                                 <div className="carousel-item">
-                                    <img src={D5} height={396} width={800} alt="D5"/>
+                                    <img src={C5} height={396} width={800} alt="C5"/>
                                 </div>
-                                <div className="carousel-item">
-                                    <img src={D6} height={396} width={800} alt="D6"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={D7} height={396} width={800} alt="D7"/>
-                                </div>
+                                
                             </div>
-                            <a className="carousel-control-prev" href="#Project1" role="button" data-slide="prev">
+                            <a className="carousel-control-prev" href="#Project2" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span className="sr-only">Previous</span>
                             </a>
-                            <a className="carousel-control-next" href="#Project1" role="button" data-slide="next">
+                            <a className="carousel-control-next" href="#Project2" role="button" data-slide="next">
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span className="sr-only">Next</span>
                             </a>
@@ -62,11 +55,11 @@ export class Project1 extends Component {
                             <hr/>
                             <p>
                                 <span className="project-website">Website:</span>
-                                <a href="https://github.com/q15517110516/Dashboard" style={{textDecoration: "none"}}>Visit</a>
+                                <a href="https://github.com/q15517110516/ChartApp" style={{textDecoration: "none"}}>Visit</a>
                             </p>
                             <p>
                                 <span className="project-date">Date:</span>
-                                <span>07/2019</span>
+                                <span>04/2020</span>
                             </p>
                         </div>
                         
@@ -77,4 +70,4 @@ export class Project1 extends Component {
     }
 }
 
-export default Project1
+export default Project2

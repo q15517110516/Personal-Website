@@ -11,8 +11,8 @@ import {img1,
         Template,
         Title    } from './Images';
 import video from './Images/Background.webm';
-import { C1, C2, C3, C4, C5, D1, D2, D3, D4, D5, D6, D7 } from './Projects-Images';
 import Project1 from './Project1';
+import Project2 from './Project2';
 
 
 
@@ -167,13 +167,17 @@ export class Home extends Component {
                                             Display charts with selected data and chart template.
                                         </p>
                                     </div>
-                                    <Modal centered 
+                                    <Modal  
+                                        footer={null}
+                                        style={{top: 0}}
                                         width="100%"
+                                        mask={false}
+                                        maskClosable={false}
                                         visible={this.state.project2Visible} 
                                         onOk={() => this.showProject2(false)}
                                         onCancel={() => this.showProject2(false)}
-                                        >
-                                            <p>222</p>
+                                    >
+                                        <Project2/>
                                     </Modal>
                                 </div>
                             </div>
