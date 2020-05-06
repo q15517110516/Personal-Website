@@ -121,13 +121,13 @@ export class Home extends Component {
 
                 {/* Projects */}
                 <div className="home-content-3">
-                    <img src={img3} alt="img3" width={100} height={100}/>
+                    <img className="img3" src={img3} alt="img3" width={100} height={100}/>
                     <h1 className="home-project-title">
                         <b>What Have I Done?</b>
                     </h1>
-                    <div className="home-projects">
 
-                        {/* Carousel */}
+                    {/* Carousel */}
+                    <div className="home-projects">
                         <div id="projects" className="carousel slides" data-ride="carousel">
                             <ol className="carousel-indicators">
                                 <li data-target="#projects" data-slide-to="0"></li>
@@ -137,10 +137,10 @@ export class Home extends Component {
 
                                 {/* Dashboard */}
                                 <div className="carousel-item active">
-                                    <img src={Dashboard} width={752} height={502} alt="dashboard" onClick={() => this.showProject1(true)} />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    <img className="dashboard-image" src={Dashboard} alt="dashboard" onClick={() => this.showProject1(true)} />
+                                    <div className="carousel-caption">
                                         <h5 style={{color: "white"}}><b>Dashboard</b></h5>
-                                        <p>
+                                        <p className="dashboard-p">
                                             Dashboard project contains Homepage, user lists, chatApp, and several charts.
                                         </p>
                                     </div>
@@ -160,10 +160,10 @@ export class Home extends Component {
 
                                 {/* ChartApp */}
                                 <div className="carousel-item">
-                                    <img src={Template} width={752} height={502} alt="template" onClick={() => this.showProject2(true)}/>
-                                    <div className="carousel-caption d-none d-md-block">
+                                    <img className="chartApp-image" src={Template} alt="template" onClick={() => this.showProject2(true)}/>
+                                    <div className="carousel-caption">
                                         <h5><b>Template Selector</b></h5>
-                                        <p style={{color: "black"}}>
+                                        <p className="chartApp-p" style={{color: "black"}}>
                                             Display charts with selected data and chart template.
                                         </p>
                                     </div>

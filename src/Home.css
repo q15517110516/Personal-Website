@@ -35,6 +35,12 @@
     min-height: 100%;
 }
 
+.dashboard-image,
+.chartApp-image {
+    width: 752px;
+    height: 502px;
+}
+
 @media only screen and (min-width: 1200px) {
     .home-content {
         width: 1100px;
@@ -66,9 +72,8 @@
     }
     .home-projects {
         width: 100%;
-        min-width: 640px;
         background-color: #333333;
-        height: 502px;
+        max-height: 502px;
         margin-bottom: 100px;
     }
 }
@@ -95,5 +100,26 @@
     .home-content-2-content {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .img1,
+    .img2,
+    .img3 {
+        width: 75px;
+        height: 75px;
+    }
+    .skills>h4 {
+        font-size: 20px;
+    }
+    .home-projects {
+        width: 90%;
+        height: 90%;
+    }
+    .dashboard-image,
+    .chartApp-image {
+        width: 100%;
+        height: 100%;
     }
 }
