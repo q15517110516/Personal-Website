@@ -5,54 +5,19 @@
     font-family: "Poppins", sans-serif;
 }
 
-.home-content {
-    width: 1100px;
-}
-
-.home-content-1,
-.home-content-2 {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-    justify-content: space-between;
-}
-
 .home-content-1-title,
 .home-content-2-title {
     margin-bottom: 20px;
-}
-
-.img1 {
-    margin-right: 100px;
-}
-
-.img2 {
-    margin-left: 100px;
 }
 
 .home-content-2-skill {
     width: 100%;
 }
 
-.home-content-2-content {
-    display: flex;
-}
-
-.skills-left,
-.skills-right {
-    width: 50%;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
 .skills {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-}
-
-.skills>h4 {
-    margin-bottom: 0;
 }
 
 .home-content-3 {
@@ -62,18 +27,73 @@
     align-items: center;
 }
 
-.home-projects {
-    width: 100%;
-    min-width: 990px;
-    background-color: #333333;
-    height: 502px;
-    margin-bottom: 100px;
-}
-
 .carousel-item {
     text-align: center;
 }
 
 .ant-modal-body {
     min-height: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .home-content {
+        width: 1100px;
+    }
+    .home-content-1,
+    .home-content-2 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 100px;
+        justify-content: space-between;
+    }
+    .img1 {
+        margin-right: 100px;
+    }
+    .img2 {
+        margin-left: 100px;
+    }
+    .home-content-2-content {
+        display: flex;
+    }
+    .skills-left,
+    .skills-right {
+        width: 50%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .skills>h4 {
+        margin-bottom: 0;
+    }
+    .home-projects {
+        width: 100%;
+        min-width: 640px;
+        background-color: #333333;
+        height: 502px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home-content {
+        width: 70%;
+    }
+    .home-content-1,
+    .home-content-2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .home-content-2-skill {
+        order: 2;
+        /* width: 100%; */
+    }
+    .img2 {
+        order: 1;
+    }
+    .home-content-2-content {
+        display: flex;
+        flex-direction: column;
+    }
 }

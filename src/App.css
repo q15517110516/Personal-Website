@@ -8,7 +8,7 @@
     margin-top: 64px;
     padding: 0 50px;
     background-color: white;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .navlink:hover {
@@ -34,6 +34,6 @@ a.navlink {
     font-family: Times, serif;
     position: absolute;
     bottom: 0;
-    height: 70px;
+    height: 60px;
     width: 100%;
 }

@@ -14,7 +14,7 @@ const { Header, Content, Footer } = Layout;
 export class App extends Component {
   render() {
     return (
-      <Layout style={{minHeight: "100%", minWidth: 990, position: "relative"}}>
+      <Layout style={{minHeight: "100%", minWidth: 640, position: "relative", backgroundColor: "white"}}>
         <Header style={{ position: 'fixed', width: '100%', zIndex: 1, backgroundColor: "black"}}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
