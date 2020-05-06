@@ -56,7 +56,7 @@ export class Home extends Component {
                     <div className="home-content-1">
                         <img className="img1" src={img1} width={100} height={100} alt="01"/>
                         <div className="home-content-1-info">
-                            <h1 className="home-content-1-title">Who Am I?</h1>
+                            <h1 className="home-content-1-title"><b>Who Am I?</b></h1>
                             <p className="home-content-1-content">
                                 Hi, my name is Mingrui Liu, graduated from University of Delaware in 2019. I am a Front-end Developer passionate about developing and implementing excellent and attractive UI effects, animations webpages, and dynamic user experiences.
                             </p>
@@ -66,27 +66,27 @@ export class Home extends Component {
                     {/* Skills */}
                     <div className="home-content-2">
                         <div className="home-content-2-skill">
-                            <h1 className="home-content-2-title">What Can I Do?</h1>
+                            <h1 className="home-content-2-title"><b>What Can I Do?</b></h1>
                             <div className="home-content-2-content">
                                 
                                 {/* skills left-side */}
                                 <div className="skills-left">
                                     <div className="skills">
-                                        <h4>HTML5/CSS3</h4>
+                                        <h4><b>HTML5/CSS3</b></h4>
                                         <Progress percent={90} strokeColor="black"
                                         />
                                     </div>
                                     <div className="skills">
-                                        <h4>JavaScript</h4>
+                                        <h4><b>JavaScript</b></h4>
                                         <Progress percent={80} strokeColor="black"/>
                                     </div>
                                     <div className="skills">
-                                        <h4>React JS</h4>
+                                        <h4><b>React JS</b></h4>
                                         <Progress percent={80} strokeColor="black"
                                         />
                                     </div>
                                     <div className="skills">
-                                        <h4>Node JS</h4>
+                                        <h4><b>Node JS</b></h4>
                                         <Progress percent={65} strokeColor="black"
                                         />
                                     </div>
@@ -95,20 +95,20 @@ export class Home extends Component {
                                 {/* skills right-side */}
                                 <div className="skills-right">
                                     <div className="skills">
-                                        <h4>RWD</h4>
+                                        <h4><b>RWD</b></h4>
                                         <Progress percent={85} strokeColor="black"
                                         />
                                     </div>
                                     <div className="skills">
-                                        <h4>Bootstrap</h4>
+                                        <h4><b>Bootstrap</b></h4>
                                         <Progress percent={80} strokeColor="black"/>
                                     </div>
                                     <div className="skills">
-                                        <h4>jQuery</h4>
+                                        <h4><b>jQuery</b></h4>
                                         <Progress percent={75} strokeColor="black"/>
                                     </div>
                                     <div className="skills">
-                                        <h4>MongoDB</h4>
+                                        <h4><b>MongoDB</b></h4>
                                         <Progress percent={60} strokeColor="black"
                                         />
                                     </div>
@@ -123,7 +123,7 @@ export class Home extends Component {
                 <div className="home-content-3">
                     <img src={img3} alt="img3" width={100} height={100}/>
                     <h1 className="home-project-title">
-                        What Have I Done?
+                        <b>What Have I Done?</b>
                     </h1>
                     <div className="home-projects">
 
@@ -139,7 +139,7 @@ export class Home extends Component {
                                 <div className="carousel-item active">
                                     <img src={Dashboard} width={752} height={502} alt="dashboard" onClick={() => this.showProject1(true)} />
                                     <div className="carousel-caption d-none d-md-block">
-                                        <h5 style={{color: "white"}}>Dashboard</h5>
+                                        <h5 style={{color: "white"}}><b>Dashboard</b></h5>
                                         <p>
                                             Dashboard project contains Homepage, user lists, chatApp, and several charts.
                                         </p>
@@ -162,7 +162,7 @@ export class Home extends Component {
                                 <div className="carousel-item">
                                     <img src={Template} width={752} height={502} alt="template" onClick={() => this.showProject2(true)}/>
                                     <div className="carousel-caption d-none d-md-block">
-                                        <h5>Template Selector</h5>
+                                        <h5><b>Template Selector</b></h5>
                                         <p style={{color: "black"}}>
                                             Display charts with selected data and chart template.
                                         </p>

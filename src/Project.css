@@ -18,11 +18,12 @@
 .project-description {
     margin-left: 30px;
     font-family: "Poppins", sans-serif;
-    width: 400px;
+    width: 500px;
 }
 
 .project-website,
+.project-environment,
 .project-date {
     display: inline-block;
-    width: 100px;
+    width: 120px;
 }

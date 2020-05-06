@@ -1,7 +1,7 @@
 .contact-main {
     display: flex;
     flex-direction: column;
-    font-family: Rale way;
+    font-family: "Poppins", sans-serif;
     width: 80%;
     margin: auto;
 }

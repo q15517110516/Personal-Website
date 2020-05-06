@@ -58,11 +58,16 @@ export class Project1 extends Component {
 
                         <div className="project-description">
                             <h2><b>Description</b></h2>
-                            <p>This project is a dashboard template that allows checking users information, send messages to other team members, manage pending affairs, personal and total performances, and manage users' genders and ages.  </p>
+                            <p>The project is a dashboard template that can be used to check user information, send messages to other team members, manage pending transactions, view personal and overall performance, and manage the user's gender and age.  </p>
                             <hr/>
                             <p>
                                 <span className="project-website">Website:</span>
                                 <a href="https://github.com/q15517110516/Dashboard" style={{textDecoration: "none"}}>Visit</a>
+                            </p>
+                            
+                            <p>
+                                <span className="project-environment">Environment:</span>
+                                <span>React JS, D3.js, Bootstrap, JavaScript</span>
                             </p>
                             <p>
                                 <span className="project-date">Date:</span>

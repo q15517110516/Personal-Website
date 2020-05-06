@@ -12,7 +12,7 @@ export class About extends Component {
                 <img className="about-img" src={about} alt="aboutme" style={{width: 864, height: 356}} />
                 
                 <div className="about-content">
-                    <h1>Introduction</h1>
+                    <h1><b>Introduction</b></h1>
                     <hr/>
                     <p>Hello, my name is Mingrui Liu. I'm a Front-end Developer with experience in HTML5, CSS3, JavaScript, Bootstrap, and  React JS.</p>
 
@@ -22,14 +22,14 @@ export class About extends Component {
 
                     <p>In addition to the Front-end knowledge, I also had hands-on experience with building Back-end servers and APIs using Node JS, Express, and connecting with MongoDB.</p>
                     
-                    <h1>Experience</h1>
+                    <h1><b>Experience</b></h1>
                     <hr/>
                     <p>During the year 2017, I did my first Front-end Developer Internship at Baoshang Bank Co., Ltd. located in Chengdu, China.
                     The project was basically designing and implementing an internal webpage which displays users' profiles.</p>
 
                     <p>From March 2018 to June 2019, I was working as a Front-end Developer which was a part-time role in my university. The task was to develop and modify an internal forum based on React JS. I was responsible for building the reusable components which include login and logout system and also a webpage that displays users' personal information after users' login.</p>
 
-                    <h1>Education</h1>
+                    <h1><b>Education</b></h1>
                     <hr/>
                     <span><b>Bachelor of Engineering, </b>Computer Engineering</span>
                     <span style={{marginLeft: 50}}> <b>University of Delaware</b></span>

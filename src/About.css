@@ -1,7 +1,7 @@
 .about-main {
     display: flex;
     flex-direction: column;
-    font-family: Rale way;
+    font-family: "Poppins", sans-serif;
     width: 80%;
     margin: auto;
 }
@@ -20,6 +20,7 @@ h1 {
     font-size: 30px;
 }
 
-p {
+p,
+span {
     font-size: 18px;
 }
