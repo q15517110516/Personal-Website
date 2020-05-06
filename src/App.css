@@ -8,8 +8,7 @@
     margin-top: 64px;
     padding: 0 50px;
     background-color: white;
-    overflow: auto;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
 }
 
 .navlink:hover {
@@ -29,4 +28,12 @@ a.navlink {
 .ant-menu-dark,
 .ant-menu-item-selected {
     background-color: black !important;
+}
+
+.footer {
+    font-family: Times, serif;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
 }

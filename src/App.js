@@ -14,8 +14,8 @@ const { Header, Content, Footer } = Layout;
 export class App extends Component {
   render() {
     return (
-      <Layout style={{height: "100vh", minWidth: 990}}>
-        <Header style={{ position: 'fixed', width: '100%', backgroundColor: "black"}}>
+      <Layout style={{minHeight: "100%", minWidth: 990, position: "relative"}}>
+        <Header style={{ position: 'fixed', width: '100%', zIndex: 1, backgroundColor: "black"}}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
             <Menu.Item className="nav-item" key="1">
@@ -36,7 +36,7 @@ export class App extends Component {
             <Route path = "/Contact" component={Contact}/>
           </Switch>
         </Content>
-        <Footer style={{fontFamily: "Times, serif"}}>
+        <Footer className="footer">
           <div style={{float: "left"}}>Mingrui Liu</div>
           <div style={{float: "right"}}>Copyright © 2020 - Mingrui Liu. All Rights Reserved</div>
         </Footer>
