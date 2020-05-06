@@ -1,6 +1,28 @@
-.project-dashboard {
+.project1 {
     display: flex;
     flex-direction: column;
-    /* height: 100%;
-    overflow: hidden; */
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 240px;
+}
+
+.project-content {
+    display: flex;
+}
+
+.project-title>h1 {
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.project-description {
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
+    width: 400px;
+}
+
+.project-website,
+.project-date {
+    display: inline-block;
+    width: 100px;
 }

@@ -147,12 +147,14 @@ export class Home extends Component {
                                     <Modal  
                                         footer={null}
                                         style={{top: 0}}
-                                        
+                                        width="100%"
+                                        mask={false}
+                                        maskClosable={false}
                                         visible={this.state.project1Visible} 
                                         onOk={() => this.showProject1(false)}
                                         onCancel={() => this.showProject1(false)}
-                                        >
-                                            <Project1/>
+                                    >
+                                        <Project1/>
                                     </Modal>
                                 </div>
 

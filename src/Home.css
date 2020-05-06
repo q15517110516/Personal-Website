@@ -66,3 +66,7 @@
 .carousel-item {
     text-align: center;
 }
+
+.ant-modal-body {
+    height: 100vh;
+}
