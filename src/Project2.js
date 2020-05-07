@@ -13,40 +13,42 @@ export class Project2 extends Component {
                     </div>
 
                     <div className="project-content">
-                        <div id="Project2" className="carousel slide" data-ride="carousel" style={{width: 800}}>
-                            <ol className="carousel-indicators">
-                                <li data-target="#Project2" data-slide-to="0"></li>
-                                <li data-target="#Project2" data-slide-to="1"></li>
-                                <li data-target="#Project2" data-slide-to="2"></li>
-                                <li data-target="#Project2" data-slide-to="3"></li>
-                                <li data-target="#Project2" data-slide-to="4"></li>
-                            </ol>
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src={C1} height={396} width={800} alt="C1"/>
+                        <div className="project-content-images">
+                            <div id="Project2" className="carousel slide" data-ride="carousel" style={{width: 800}}>
+                                <ol className="carousel-indicators">
+                                    <li data-target="#Project2" data-slide-to="0"></li>
+                                    <li data-target="#Project2" data-slide-to="1"></li>
+                                    <li data-target="#Project2" data-slide-to="2"></li>
+                                    <li data-target="#Project2" data-slide-to="3"></li>
+                                    <li data-target="#Project2" data-slide-to="4"></li>
+                                </ol>
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={C1} alt="C1"/>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={C2} alt="C2"/>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={C3} alt="C3"/>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={C4} alt="C4"/>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={C5} alt="C5"/>
+                                    </div>
+                                    
                                 </div>
-                                <div className="carousel-item">
-                                    <img src={C2} height={396} width={800} alt="C2"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={C3} height={396} width={800} alt="C3"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={C4} height={396} width={800} alt="C4"/>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={C5} height={396} width={800} alt="C5"/>
-                                </div>
-                                
+                                <a className="carousel-control-prev" href="#Project2" role="button" data-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Previous</span>
+                                </a>
+                                <a className="carousel-control-next" href="#Project2" role="button" data-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="sr-only">Next</span>
+                                </a>
                             </div>
-                            <a className="carousel-control-prev" href="#Project2" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#Project2" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
                         </div>
 
                         <div className="project-description">

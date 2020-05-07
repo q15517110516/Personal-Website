@@ -145,9 +145,9 @@ export class Home extends Component {
                                         </p>
                                     </div>
                                     <Modal  
+                                        className="project-detail"
                                         footer={null}
                                         style={{top: 0}}
-                                        width="100%"
                                         mask={false}
                                         maskClosable={false}
                                         visible={this.state.project1Visible} 
@@ -168,9 +168,9 @@ export class Home extends Component {
                                         </p>
                                     </div>
                                     <Modal  
+                                        className="project-detail"
                                         footer={null}
                                         style={{top: 0}}
-                                        width="100%"
                                         mask={false}
                                         maskClosable={false}
                                         visible={this.state.project2Visible} 
