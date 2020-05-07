@@ -24,9 +24,15 @@ export class Home extends Component {
         this.state={
             project1Visible: false,
             project2Visible: false,
+            showProject: false,
         }
     }
 
+    togglePopup(){
+        this.setState({
+            showProject: !this.state.showProject
+        });
+    }
     showProject1(project1Visible){
         this.setState({
             project1Visible
@@ -137,17 +143,22 @@ export class Home extends Component {
 
                                 {/* Dashboard */}
                                 <div className="carousel-item active">
-                                    <img className="dashboard-image" src={Dashboard} alt="dashboard" onClick={() => this.showProject1(true)} />
+                                    <img className="dashboard-image" src={Dashboard} alt="dashboard" onClick={() => this.togglePopup()} />
                                     <div className="carousel-caption">
                                         <h5 style={{color: "white"}}><b>Dashboard</b></h5>
                                         <p className="dashboard-p">
                                             Dashboard project contains Homepage, user lists, chatApp, and several charts.
                                         </p>
                                     </div>
-                                    <Modal  
+                                    {this.state.showProject ? 
+                                        <Project1/>
+                                    : null
+                                    }
+                                    {/*<Modal  
                                         className="project-detail"
                                         footer={null}
                                         style={{top: 0}}
+                                        width="100%"
                                         mask={false}
                                         maskClosable={false}
                                         visible={this.state.project1Visible} 
@@ -155,21 +166,22 @@ export class Home extends Component {
                                         onCancel={() => this.showProject1(false)}
                                     >
                                         <Project1/>
-                                    </Modal>
+                                    </Modal>*/}
                                 </div>
 
                                 {/* ChartApp */}
                                 <div className="carousel-item">
-                                    <img className="chartApp-image" src={Template} alt="template" onClick={() => this.showProject2(true)}/>
+                                    <img className="chartApp-image" src={Template} alt="template" onClick={() => this.togglePopup()}/>
                                     <div className="carousel-caption">
                                         <h5><b>Template Selector</b></h5>
                                         <p className="chartApp-p" style={{color: "black"}}>
                                             Display charts with selected data and chart template.
                                         </p>
                                     </div>
-                                    <Modal  
+                                    {/*<Modal  
                                         className="project-detail"
                                         footer={null}
+                                        width="100%"
                                         style={{top: 0}}
                                         mask={false}
                                         maskClosable={false}
@@ -178,7 +190,7 @@ export class Home extends Component {
                                         onCancel={() => this.showProject2(false)}
                                     >
                                         <Project2/>
-                                    </Modal>
+                                    </Modal>*/}
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#projects" role="button" data-slide="prev">

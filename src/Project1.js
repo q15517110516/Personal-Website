@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { D1, D2, D3, D4, D5, D6, D7 } from './Projects-Images';
+import { CloseCircleTwoTone } from '@ant-design/icons';
+import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Project.css';
 
@@ -7,6 +9,7 @@ export class Project1 extends Component {
     render() {
         return (
             <div className="project-dashboard">
+                <CloseCircleTwoTone/>
                 <div className="project">
                     <div className="project-title">
                         <h1><b>Dashboard</b></h1>
