@@ -1,50 +1,54 @@
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    height: 100vh;
-    /* margin-bottom: 240px; */
-}
-
-
-/* .project-dashboard,
-.project-ChartApp {
-    width: 100%;
-} */
-
-.project-content {
-    display: flex;
-}
-
-.project-title>h1 {
-    margin-bottom: 30px;
-    font-family: "Poppins", sans-serif;
-}
-
-.project-description {
-    font-family: "Poppins", sans-serif;
-    width: 500px;
-}
-
-.project-website,
-.project-environment,
-.project-date {
-    display: inline-block;
-    width: 120px;
-}
-
-.project-content-images img {
-    width: 800px;
-    height: 396px;
-}
-
-.project-content-images {
-    width: 75%;
-    height: 396px;
+@media only screen and (min-width: 1400px) {
+    //TODO chongxie
+    .project-dashboard,
+    .project-ChartApp {
+        margin-top: 200px;
+        min-height: 100vh;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1340px;
+        /* width: 100%; */
+        margin: auto;
+    }
+    .project-content {
+        display: flex;
+        /* width: 70%; */
+    }
+    .project-title>h1 {
+        margin-bottom: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+    .project-description {
+        margin-left: 40px;
+        font-family: "Poppins", sans-serif;
+        width: 500px;
+    }
+    .project-website,
+    .project-environment,
+    .project-date {
+        display: inline-block;
+        width: 120px;
+    }
+    .project-content-images img {
+        width: 800px;
+        height: 396px;
+    }
+    .project-content-images {
+        /* width: 100%; */
+        height: 396px;
+    }
+    h2 {
+        font-size: 27px;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
+    .project {
+        width: 80%;
+    }
     .project-content {
         display: flex;
         flex-direction: column;
@@ -55,12 +59,15 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .project-content-images {
-        width: 75%;
-        height: 75%;
-    }
-    .project-content-images img {
+    /* .project-content-images {
+        width: 80%;
+        height: 80%;
+    } */
+    .carousel-item img {
         width: 100%;
         height: 100%;
+    }
+    h2 {
+        font-size: 24px;
     }
 }

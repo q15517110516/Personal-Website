@@ -6,8 +6,8 @@ import './Project.css';
 export class Project1 extends Component {
     render() {
         return (
-            <div className="project">
-                <div className="project-dashboard">
+            <div className="project-dashboard">
+                <div className="project">
                     <div className="project-title">
                         <h1><b>Dashboard</b></h1>
                     </div>
