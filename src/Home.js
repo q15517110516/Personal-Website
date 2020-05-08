@@ -22,8 +22,6 @@ export class Home extends Component {
     constructor(){
         super();
         this.state={
-            project1Visible: false,
-            project2Visible: false,
             showProject: false,
         }
     }
@@ -33,17 +31,7 @@ export class Home extends Component {
             showProject: !this.state.showProject
         });
     }
-    showProject1(project1Visible){
-        this.setState({
-            project1Visible
-        })
-    }
-    
-    showProject2(project2Visible){
-        this.setState({
-            project2Visible
-        })
-    }
+
 
 
     render() {
@@ -151,7 +139,7 @@ export class Home extends Component {
                                         </p>
                                     </div>
                                     {this.state.showProject ? 
-                                        <Project1/>
+                                        <Project1 closePopup={() => this.togglePopup()}/>
                                     : null
                                     }
                                     {/*<Modal  
@@ -178,6 +166,10 @@ export class Home extends Component {
                                             Display charts with selected data and chart template.
                                         </p>
                                     </div>
+                                    {this.state.showProject ? 
+                                        <Project2 closePopup={() => this.togglePopup()}/>
+                                    : null
+                                    }
                                     {/*<Modal  
                                         className="project-detail"
                                         footer={null}

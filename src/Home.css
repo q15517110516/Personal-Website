@@ -31,11 +31,6 @@
     text-align: center;
 }
 
-.project-detail {
-    min-width: 100%;
-    /* min-height: 100%; */
-}
-
 .dashboard-image,
 .chartApp-image {
     width: 752px;
