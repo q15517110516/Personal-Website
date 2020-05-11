@@ -9,7 +9,8 @@ import {img1,
         img3,
         Dashboard,
         Template,
-        Title    } from './Images';
+        Title,
+        footerImage } from './Images';
 import video from './Images/Background.webm';
 import Project1 from './Project1';
 import Project2 from './Project2';
@@ -168,7 +169,7 @@ export class Home extends Component {
                                 {/* ChartApp */}
                                 <div className="carousel-item">
                                     <img className="chartApp-image" src={Template} alt="template" onClick={() => this.handleOpenProject2()}/>
-                                    <div className="carousel-caption">
+                                    <div className="carousel-caption" style={{zIndex: 9}}>
                                         <h5><b>Template Selector</b></h5>
                                         <p className="chartApp-p" style={{color: "black"}}>
                                             Display charts with selected data and chart template.
@@ -219,7 +220,9 @@ export class Home extends Component {
                     
                 </div>
 
-                <div className="home-footer"></div>
+                {/*<div className="home-footer">
+                    <img src={footerImage} alt="foot-image"/>
+                </div>*/}
             </div>
         )
     }

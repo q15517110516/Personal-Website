@@ -15,7 +15,7 @@ export class App extends Component {
   render() {
     return (
       <Layout style={{minHeight: "100%", minWidth: 640, position: "relative", backgroundColor: "white"}}>
-        <Header style={{ position: 'fixed', width: '100%', zIndex: 10, backgroundColor: "black", height: "70px"}}>
+        <Header style={{ position: 'fixed', width: '100%', zIndex: 900, backgroundColor: "black", height: "70px"}}>
           <div className="my-name" style={{float: "left"}}>Mingrui Liu</div>
           <Menu className="nav-bar" theme="dark" mode="horizontal" style={{float: "right", backgroundColor: "black"}}>
             <Menu.Item className="nav-item" key="1">
