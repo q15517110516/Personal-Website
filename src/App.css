@@ -34,7 +34,14 @@ a.navlink {
 .footer {
     font-family: Times, serif;
     position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     bottom: 0;
-    height: 60px;
+    height: 80px;
     width: 100%;
+}
+
+.footer div {
+    font-size: 20px;
 }

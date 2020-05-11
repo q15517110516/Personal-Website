@@ -20,7 +20,7 @@ export class Project2 extends Component {
 
                         <div className="project-content">
                             <div className="project-content-images">
-                                <div id="Project2" className="carousel slide" data-ride="carousel" style={{width: 800}}>
+                                <div id="Project2" className="carousel slide" data-ride="carousel" >
                                     <ol className="carousel-indicators">
                                         <li data-target="#Project2" data-slide-to="0"></li>
                                         <li data-target="#Project2" data-slide-to="1"></li>
