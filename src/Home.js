@@ -7,7 +7,6 @@ import ReactModal from 'react-modal';
 import {img1, 
         img2, 
         img3,
-        img4,
         Dashboard,
         Template,
         Title    } from './Images';
@@ -130,7 +129,7 @@ export class Home extends Component {
                 </div>
 
                 {/* Projects */}
-                <div className="home-content-3">
+                <div className="home-content-3" >
                     <img className="img3" src={img3} alt="img3" width={100} height={100}/>
                     <h1 className="home-project-title">
                         <b>What Have I Done?</b>
@@ -161,29 +160,9 @@ export class Home extends Component {
                                         className="projectmodal-content"
                                         overlayClassName="projectmodal-overlay"
                                         bodyOpenClassName="projectmodal-open"
-
                                     >
                                         <Project1 closePopup={() => this.handleCloseProject1()}/>
                                     </ReactModal>
-
-                                    {/*{this.state.showProject ? 
-                                        <Project1 closePopup={() => this.togglePopup()}/>
-                                    : null
-                                    }*/}
-
-                                    {/*<Modal  
-                                        className="project-detail"
-                                        footer={null}
-                                        style={{top: 0}}
-                                        width="100%"
-                                        mask={false}
-                                        maskClosable={false}
-                                        visible={this.state.project1Visible} 
-                                        onOk={() => this.showProject1(false)}
-                                        onCancel={() => this.showProject1(false)}
-                                    >
-                                        <Project1/>
-                                    </Modal>*/}
                                 </div>
 
                                 {/* ChartApp */}
@@ -205,24 +184,6 @@ export class Home extends Component {
                                     >
                                         <Project2 closePopup={() => this.handleCloseProject2()}/>
                                     </ReactModal>
-
-                                    {/*{this.state.showProject ? 
-                                        <Project2 closePopup={() => this.togglePopup()}/>
-                                    : null
-                                    }*/}
-                                    {/*<Modal  
-                                        className="project-detail"
-                                        footer={null}
-                                        width="100%"
-                                        style={{top: 0}}
-                                        mask={false}
-                                        maskClosable={false}
-                                        visible={this.state.project2Visible} 
-                                        onOk={() => this.showProject2(false)}
-                                        onCancel={() => this.showProject2(false)}
-                                    >
-                                        <Project2/>
-                                    </Modal>*/}
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#projects" role="button" data-slide="prev">
@@ -236,6 +197,28 @@ export class Home extends Component {
                         </div>
                     </div>
                 </div>
+
+                {/* Achievement */}
+                <div className="home-content-4">
+                    <div className="yearsOfExp">
+                        <span className="number">
+                            3+
+                        </span>
+                        <span className="numberDescription">
+                            YEARS OF XPERIENCE
+                        </span>
+                    </div>
+                    <div className="totalProjects">
+                        <span className="number">
+                            100+
+                        </span>
+                        <span className="numberDescription">
+                            PROJECT COMPLETED
+                        </span>
+                    </div>
+                    
+                </div>
+
                 <div className="home-footer"></div>
             </div>
         )
