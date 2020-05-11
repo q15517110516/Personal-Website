@@ -37,6 +37,30 @@
     height: 502px;
 }
 
+.projectmodal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    overflow: auto;
+}
+
+.projectmodal-open {
+    height: 100%;
+    overflow: hidden;
+}
+
+.projectmodal-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
 @media only screen and (min-width: 1200px) {
     .home-content {
         width: 1100px;
@@ -74,7 +98,7 @@
     }
     .skills>h4 {
         margin-bottom: 0;
-        font-size: 25px;
+        font-size: 30px;
     }
     .home-projects {
         width: 100%;

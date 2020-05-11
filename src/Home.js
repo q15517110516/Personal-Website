@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import './Home.css';
 import 'antd/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Progress, Modal } from 'antd';
+import { Progress } from 'antd';
+import ReactModal from 'react-modal';
 import {img1, 
         img2, 
         img3,
@@ -22,14 +23,31 @@ export class Home extends Component {
     constructor(){
         super();
         this.state={
-            showProject: false,
+            showProject1: false,
+            showProject2: false,
         }
     }
 
-    togglePopup(){
+    handleOpenProject1(){
         this.setState({
-            showProject: !this.state.showProject
+            showProject1: true,
         });
+    }
+    handleOpenProject2(){
+        this.setState({
+            showProject2: true,
+        });
+    }
+
+    handleCloseProject1(){
+        this.setState({
+            showProject1: false,
+        })
+    }
+    handleCloseProject2(){
+        this.setState({
+            showProject2: false,
+        })
     }
 
 
@@ -131,17 +149,27 @@ export class Home extends Component {
 
                                 {/* Dashboard */}
                                 <div className="carousel-item active">
-                                    <img className="dashboard-image" src={Dashboard} alt="dashboard" onClick={() => this.togglePopup()} />
+                                    <img className="dashboard-image" src={Dashboard} alt="dashboard" onClick={() => this.handleOpenProject1()} />
                                     <div className="carousel-caption">
                                         <h5 style={{color: "white"}}><b>Dashboard</b></h5>
                                         <p className="dashboard-p">
                                             Dashboard project contains Homepage, user lists, chatApp, and several charts.
                                         </p>
                                     </div>
-                                    {this.state.showProject ? 
+                                    <ReactModal
+                                        isOpen={this.state.showProject1}
+                                        onRequestClose={this.handleCloseModal1}
+                                        className="projectmodal-content"
+                                        overlayClassName="projectmodal-overlay"
+                                    >
+                                        <Project1 closePopup={() => this.handleCloseProject1()}/>
+                                    </ReactModal>
+
+                                    {/*{this.state.showProject ? 
                                         <Project1 closePopup={() => this.togglePopup()}/>
                                     : null
-                                    }
+                                    }*/}
+
                                     {/*<Modal  
                                         className="project-detail"
                                         footer={null}
@@ -159,17 +187,27 @@ export class Home extends Component {
 
                                 {/* ChartApp */}
                                 <div className="carousel-item">
-                                    <img className="chartApp-image" src={Template} alt="template" onClick={() => this.togglePopup()}/>
+                                    <img className="chartApp-image" src={Template} alt="template" onClick={() => this.handleOpenProject2()}/>
                                     <div className="carousel-caption">
                                         <h5><b>Template Selector</b></h5>
                                         <p className="chartApp-p" style={{color: "black"}}>
                                             Display charts with selected data and chart template.
                                         </p>
                                     </div>
-                                    {this.state.showProject ? 
+                                    <ReactModal
+                                        isOpen={this.state.showProject2}
+                                        onRequestClose={this.handleCloseModal2}
+                                        className="projectmodal-content"
+                                        overlayClassName="projectmodal-overlay"
+                                        bodyOpenClassName="projectmodal-open"
+                                    >
+                                        <Project2 closePopup={() => this.handleCloseProject2()}/>
+                                    </ReactModal>
+
+                                    {/*{this.state.showProject ? 
                                         <Project2 closePopup={() => this.togglePopup()}/>
                                     : null
-                                    }
+                                    }*/}
                                     {/*<Modal  
                                         className="project-detail"
                                         footer={null}

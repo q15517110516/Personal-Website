@@ -32,7 +32,7 @@ export class Project1 extends Component {
                                     </ol>
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
-                                            <img src={D1} className="d-block w-100" alt="D1"/>
+                                            <img src={D1} alt="D1"/>
                                         </div>
                                         <div className="carousel-item">
                                             <img src={D2} alt="D2"/>
