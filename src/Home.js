@@ -50,8 +50,6 @@ export class Home extends Component {
         })
     }
 
-
-
     render() {
         return (
             <div className="home">
@@ -157,10 +155,13 @@ export class Home extends Component {
                                         </p>
                                     </div>
                                     <ReactModal
+                                        id="myModal1"
                                         isOpen={this.state.showProject1}
                                         onRequestClose={this.handleCloseModal1}
                                         className="projectmodal-content"
                                         overlayClassName="projectmodal-overlay"
+                                        bodyOpenClassName="projectmodal-open"
+
                                     >
                                         <Project1 closePopup={() => this.handleCloseProject1()}/>
                                     </ReactModal>
@@ -195,6 +196,7 @@ export class Home extends Component {
                                         </p>
                                     </div>
                                     <ReactModal
+                                        id="myModal2"
                                         isOpen={this.state.showProject2}
                                         onRequestClose={this.handleCloseModal2}
                                         className="projectmodal-content"

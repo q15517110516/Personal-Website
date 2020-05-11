@@ -12,6 +12,7 @@
     "bideo": "^1.0.0",
     "bootstrap": "^4.4.1",
     "emailjs-com": "^2.4.1",
+    "jquery": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",
