@@ -66,7 +66,7 @@ export class Home extends Component {
                     <div className="home-content-1">
                         <img className="img1" src={img1} width={100} height={100} alt="01"/>
                         <div className="home-content-1-info">
-                            <h1 className="home-content-1-title"><b>Who Am I?</b></h1>
+                            <h1 className="home-content-1-title animate_animated animate_fadeInLeft"><b>Who Am I?</b></h1>
                             <p className="home-content-1-content">
                                 Hi, my name is Mingrui Liu, graduated from University of Delaware in 2019. I am a Front-end Developer passionate about developing and implementing excellent and attractive UI effects, animations webpages, and dynamic user experiences.
                             </p>
