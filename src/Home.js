@@ -11,7 +11,7 @@ import {img1,
         Template,
         Title,
         footerImage } from './Images';
-import video from './Images/Background.webm';
+import video from './Images/BackGround.mp4';
 import Project1 from './Project1';
 import Project2 from './Project2';
 
