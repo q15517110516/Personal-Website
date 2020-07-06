@@ -59,7 +59,7 @@ export class Project2 extends Component {
 
                             <div className="project-description">
                                 <h2><b>Description</b></h2>
-                                <p>This App is a template selector that allow users to generate charts based on data on the left. Users are able to add or remove data and select the template of charts to generate charts.   </p>
+                                <p>This App is a template selector that allow users to generate charts based on data in the table. Users are able to add or remove data and select the template of charts to generate charts. </p>
                                 <hr/>
                                 <p>
                                     <span className="project-website">Website:</span>
