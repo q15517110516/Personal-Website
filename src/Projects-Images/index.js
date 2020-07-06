@@ -10,8 +10,8 @@ export const D4 = require('./D-4.png');
 export const D5 = require('./D-5.png');
 export const D6 = require('./D-6.png');
 export const D7 = require('./D-7.png');
-export const M1 = require('./M-1.png');
-export const M2 = require('./M-2.png');
-export const M3 = require('./M-3.png');
-export const M4 = require('./M-4.png')
+export const M1 = require('./M-1.PNG');
+export const M2 = require('./M-2.PNG');
+export const M3 = require('./M-3.PNG');
+export const M4 = require('./M-4.PNG')
 
