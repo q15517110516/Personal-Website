@@ -156,6 +156,7 @@ export class Home extends Component {
                             <ol className="carousel-indicators">
                                 <li data-target="#projects" data-slide-to="0"></li>
                                 <li data-target="#projects" data-slide-to="1"></li>
+                                <li data-target="#projects" data-slide-to="2"></li>
                             </ol>
                             <div className="carousel-inner">
 
@@ -171,7 +172,7 @@ export class Home extends Component {
                                     <ReactModal
                                         id="myModal1"
                                         isOpen={this.state.showProject1}
-                                        onRequestClose={this.handleCloseModal1}
+                                        onRequestClose={this.handleCloseProject1}
                                         className="projectmodal-content"
                                         overlayClassName="projectmodal-overlay"
                                         bodyOpenClassName="projectmodal-open"
@@ -192,7 +193,7 @@ export class Home extends Component {
                                     <ReactModal
                                         id="myModal2"
                                         isOpen={this.state.showProject2}
-                                        onRequestClose={this.handleCloseModal2}
+                                        onRequestClose={this.handleCloseProject2}
                                         className="projectmodal-content"
                                         overlayClassName="projectmodal-overlay"
                                         bodyOpenClassName="projectmodal-open"
@@ -203,7 +204,7 @@ export class Home extends Component {
 
                                 {/* Movie List */}
                                 <div className="carousel-item">
-                                    <img className="movieList-image" src={Movie} alt="template" onClick={() => this.handleOpenProject3()}/>
+                                    <img className="movieList-image" src={Movie} alt="movielist" onClick={() => this.handleOpenProject3()}/>
                                     <div className="carousel-caption" style={{zIndex: 9}}>
                                         <h5 style={{color: "white"}}><b>Movie Browser</b></h5>
                                         <p className="movieList-p" style={{color: "white"}}>
@@ -213,7 +214,7 @@ export class Home extends Component {
                                     <ReactModal
                                         id="myModal3"
                                         isOpen={this.state.showProject3}
-                                        onRequestClose={this.handleCloseModal3}
+                                        onRequestClose={this.handleCloseProject3}
                                         className="projectmodal-content"
                                         overlayClassName="projectmodal-overlay"
                                         bodyOpenClassName="projectmodal-open"
