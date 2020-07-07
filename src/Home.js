@@ -9,11 +9,13 @@ import {img1,
         img3,
         Dashboard,
         Template,
+        Movie,
         Title,
         footerImage } from './Images';
 import video from './Images/BackGround.mp4';
 import Project1 from './Project1';
 import Project2 from './Project2';
+import Project3 from './Project3';
 
 
 
@@ -25,6 +27,8 @@ export class Home extends Component {
         this.state={
             showProject1: false,
             showProject2: false,
+            showProject3: false,
+
         }
     }
 
@@ -38,6 +42,11 @@ export class Home extends Component {
             showProject2: true,
         });
     }
+    handleOpenProject3(){
+        this.setState({
+            showProject3: true,
+        });
+    }
 
     handleCloseProject1(){
         this.setState({
@@ -47,6 +56,11 @@ export class Home extends Component {
     handleCloseProject2(){
         this.setState({
             showProject2: false,
+        })
+    }
+    handleCloseProject3(){
+        this.setState({
+            showProject3: false,
         })
     }
 
@@ -151,7 +165,7 @@ export class Home extends Component {
                                     <div className="carousel-caption">
                                         <h5 style={{color: "white"}}><b>Dashboard</b></h5>
                                         <p className="dashboard-p">
-                                            Dashboard project contains Homepage, user lists, chatApp, and several charts.
+                                            A Dashboard App contains several modules with different features.
                                         </p>
                                     </div>
                                     <ReactModal
@@ -186,6 +200,27 @@ export class Home extends Component {
                                         <Project2 closePopup={() => this.handleCloseProject2()}/>
                                     </ReactModal>
                                 </div>
+
+                                {/* Movie List */}
+                                <div className="carousel-item">
+                                    <img className="movieList-image" src={Movie} alt="template" onClick={() => this.handleOpenProject3()}/>
+                                    <div className="carousel-caption" style={{zIndex: 9}}>
+                                        <h5 style={{color: "white"}}><b>Movie Browser</b></h5>
+                                        <p className="movieList-p" style={{color: "white"}}>
+                                            Scalable Movie Browser App using React and Redux.
+                                        </p>
+                                    </div>
+                                    <ReactModal
+                                        id="myModal3"
+                                        isOpen={this.state.showProject3}
+                                        onRequestClose={this.handleCloseModal3}
+                                        className="projectmodal-content"
+                                        overlayClassName="projectmodal-overlay"
+                                        bodyOpenClassName="projectmodal-open"
+                                    >
+                                        <Project3 closePopup={() => this.handleCloseProject3()}/>
+                                    </ReactModal>
+                                </div>
                             </div>
                             <a className="carousel-control-prev" href="#projects" role="button" data-slide="prev">
                                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -206,7 +241,7 @@ export class Home extends Component {
                             3+
                         </span>
                         <span className="numberDescription">
-                            YEARS OF XPERIENCE
+                            YEARS OF EXPERIENCE
                         </span>
                     </div>
                     <div className="totalProjects">

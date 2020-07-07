@@ -6,6 +6,9 @@ export const Title = require('./Title.png');
 export const Dashboard = require('./Dashboard.jpg');
 export const Template = require('./Template.jpg');
 export const footerImage = require('./footerimage.jpg');
+export const Movie = require('./Movie.jpg');
+
+
 
 
 
