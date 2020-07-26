@@ -63,7 +63,7 @@ export class Project2 extends Component {
                                 <hr/>
                                 <p>
                                     <span className="project-website">Website:</span>
-                                    <a href="https://github.com/q15517110516/ChartApp" style={{textDecoration: "none"}}>Visit</a>
+                                    <a href="https://q15517110516.github.io/ChartGenerator/" style={{textDecoration: "none"}}>Visit</a>
                                 </p>
                                 <p>
                                     <span className="project-environment">Environment:</span>
